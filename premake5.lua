@@ -7,6 +7,8 @@ project "freetype"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	disablewarnings { "4267","4244" }
+
 	files
 	{
 		"freetype/include/ft2build.h",
@@ -54,7 +56,9 @@ project "freetype"
 		"freetype/src/truetype/truetype.c",
 		"freetype/src/type1/type1.c",
 		"freetype/src/type42/type42.c",
-		"freetype/src/winfonts/winfnt.c"
+		"freetype/src/winfonts/winfnt.c",
+		"freetype/src/svg/ftsvg.c",
+		"freetype/src/svg/ftsvg.h"
 	}
 
 	includedirs
