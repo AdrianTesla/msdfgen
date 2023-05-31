@@ -29,3 +29,9 @@ out/
 /build_xcode/
 /cmake-gen.bat
 /line-ending-check.bat
+
+*.vcxproj
+*.filters
+bin
+bin-int
+*.sln
